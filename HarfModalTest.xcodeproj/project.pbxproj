@@ -14,6 +14,12 @@
 		2F02DB4E2330DC1400F15612 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F02DB4C2330DC1400F15612 /* LaunchScreen.storyboard */; };
 		2F02DB592330DC1400F15612 /* HarfModalTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02DB582330DC1400F15612 /* HarfModalTestTests.swift */; };
 		2F02DB642330DC1400F15612 /* HarfModalTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02DB632330DC1400F15612 /* HarfModalTestUITests.swift */; };
+		2F02DB722330DE0B00F15612 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02DB712330DE0B00F15612 /* SearchViewController.swift */; };
+		2F02DB742330DE8400F15612 /* DrawerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02DB732330DE8400F15612 /* DrawerLayout.swift */; };
+		2F0CC1722331D3B7004AC75C /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0CC1712331D3B7004AC75C /* SearchViewController.storyboard */; };
+		2F0CC1742331D783004AC75C /* GrabberHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CC1732331D783004AC75C /* GrabberHandleView.swift */; };
+		2F0CC1762331D9EE004AC75C /* UISpringTimingParameters+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CC1752331D9EE004AC75C /* UISpringTimingParameters+Ex.swift */; };
+		2F0CC1782331DDFE004AC75C /* ViewPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CC1772331DDFE004AC75C /* ViewPanGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		2F02DB5F2330DC1400F15612 /* HarfModalTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarfModalTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F02DB632330DC1400F15612 /* HarfModalTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarfModalTestUITests.swift; sourceTree = "<group>"; };
 		2F02DB652330DC1400F15612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F02DB712330DE0B00F15612 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2F02DB732330DE8400F15612 /* DrawerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerLayout.swift; sourceTree = "<group>"; };
+		2F0CC1712331D3B7004AC75C /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
+		2F0CC1732331D783004AC75C /* GrabberHandleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabberHandleView.swift; sourceTree = "<group>"; };
+		2F0CC1752331D9EE004AC75C /* UISpringTimingParameters+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISpringTimingParameters+Ex.swift"; sourceTree = "<group>"; };
+		2F0CC1772331DDFE004AC75C /* ViewPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPanGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +110,14 @@
 			isa = PBXGroup;
 			children = (
 				2F02DB432330DC1300F15612 /* AppDelegate.swift */,
-				2F02DB452330DC1300F15612 /* ViewController.swift */,
 				2F02DB472330DC1300F15612 /* Main.storyboard */,
+				2F02DB452330DC1300F15612 /* ViewController.swift */,
+				2F0CC1712331D3B7004AC75C /* SearchViewController.storyboard */,
+				2F02DB712330DE0B00F15612 /* SearchViewController.swift */,
+				2F0CC1752331D9EE004AC75C /* UISpringTimingParameters+Ex.swift */,
+				2F0CC1772331DDFE004AC75C /* ViewPanGestureRecognizer.swift */,
+				2F0CC1732331D783004AC75C /* GrabberHandleView.swift */,
+				2F02DB732330DE8400F15612 /* DrawerLayout.swift */,
 				2F02DB4A2330DC1400F15612 /* Assets.xcassets */,
 				2F02DB4C2330DC1400F15612 /* LaunchScreen.storyboard */,
 				2F02DB4F2330DC1400F15612 /* Info.plist */,
@@ -232,6 +250,7 @@
 				2F02DB4E2330DC1400F15612 /* LaunchScreen.storyboard in Resources */,
 				2F02DB4B2330DC1400F15612 /* Assets.xcassets in Resources */,
 				2F02DB492330DC1300F15612 /* Main.storyboard in Resources */,
+				2F0CC1722331D3B7004AC75C /* SearchViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F0CC1742331D783004AC75C /* GrabberHandleView.swift in Sources */,
+				2F0CC1782331DDFE004AC75C /* ViewPanGestureRecognizer.swift in Sources */,
+				2F0CC1762331D9EE004AC75C /* UISpringTimingParameters+Ex.swift in Sources */,
+				2F02DB742330DE8400F15612 /* DrawerLayout.swift in Sources */,
+				2F02DB722330DE0B00F15612 /* SearchViewController.swift in Sources */,
 				2F02DB462330DC1300F15612 /* ViewController.swift in Sources */,
 				2F02DB442330DC1300F15612 /* AppDelegate.swift in Sources */,
 			);

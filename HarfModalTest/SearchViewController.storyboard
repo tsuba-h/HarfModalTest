@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ibc-wH-J7R">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="uec-r4-AWO">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="ibc-wH-J7R" customClass="SearchViewController" customModule="HarfModalTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J8f-IU-Pkp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Y2-iK-cic">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8zB-DU-2UL">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="762"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="p7H-kl-Cqj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cfA-H2-Tlm">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="gUC-HI-pnw">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gUC-HI-pnw" id="fx0-s4-qMs">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p7H-kl-Cqj" firstAttribute="top" secondItem="MM6-hV-P7N" secondAttribute="top" id="7cA-zJ-PDw"/>
+                            <constraint firstItem="4Y2-iK-cic" firstAttribute="leading" secondItem="MM6-hV-P7N" secondAttribute="leading" id="AJb-Kv-reC"/>
+                            <constraint firstItem="MM6-hV-P7N" firstAttribute="trailing" secondItem="4Y2-iK-cic" secondAttribute="trailing" id="Bo6-pF-Siw"/>
+                            <constraint firstItem="cfA-H2-Tlm" firstAttribute="top" secondItem="p7H-kl-Cqj" secondAttribute="bottom" id="E7M-l2-Jp5"/>
+                            <constraint firstItem="MM6-hV-P7N" firstAttribute="trailing" secondItem="cfA-H2-Tlm" secondAttribute="trailing" id="FMg-uE-zT7"/>
+                            <constraint firstItem="MM6-hV-P7N" firstAttribute="bottom" secondItem="4Y2-iK-cic" secondAttribute="bottom" id="HuI-QR-F62"/>
+                            <constraint firstItem="p7H-kl-Cqj" firstAttribute="leading" secondItem="MM6-hV-P7N" secondAttribute="leading" id="euy-sJ-Qgh"/>
+                            <constraint firstItem="4Y2-iK-cic" firstAttribute="top" secondItem="p7H-kl-Cqj" secondAttribute="bottom" id="f46-hs-MPl"/>
+                            <constraint firstItem="cfA-H2-Tlm" firstAttribute="leading" secondItem="MM6-hV-P7N" secondAttribute="leading" id="jSb-qs-kPo"/>
+                            <constraint firstItem="p7H-kl-Cqj" firstAttribute="trailing" secondItem="MM6-hV-P7N" secondAttribute="trailing" id="mPl-xb-UZv"/>
+                            <constraint firstItem="MM6-hV-P7N" firstAttribute="bottom" secondItem="cfA-H2-Tlm" secondAttribute="bottom" id="xGO-Nx-FKg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MM6-hV-P7N"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="p7H-kl-Cqj" id="bnm-8L-KMF"/>
+                        <outlet property="tableView" destination="cfA-H2-Tlm" id="Cei-Vo-bbO"/>
+                        <outlet property="visualEffectView" destination="4Y2-iK-cic" id="uEE-YW-noW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuG-Nc-Nns" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="158"/>
+        </scene>
+    </scenes>
+</document>
